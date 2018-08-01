@@ -1,0 +1,55 @@
+{
+  "name": "practius-calculator-react-native",
+  "version": "1.0.0",
+  "description": "Pure React Native based calculator example aiming for the latest best practices and patterns recommended",
+  "private": false,
+
+  "scripts": {
+    "start": "node node_modules/react-native/local-cli/cli.js start",
+    "test": "jest"
+  },
+
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/"
+  },
+
+  "keywords": [
+    "react native",
+    "react",
+    "calculator",
+    "example",
+    "mobile",
+    "best practices",
+    "showcase",
+    "patterns",
+    "architecture"
+  ],
+
+  "author": "Çağıl 'MadChuckle' Şeker <cagils@gmail.com>",
+
+  "contributors": [
+    ""
+  ],
+
+  "license": "MIT",
+
+  "dependencies": {
+    "mathjs": "^3.16.5",
+    "prop-types": "^15.6.0",
+    "react": "16.0.0-beta.5",
+    "react-native": "0.49.3",
+    "react-native-vector-icons": "^4.4.2"
+  },
+
+  "devDependencies": {
+    "babel-jest": "21.2.0",
+    "babel-preset-react-native": "4.0.0",
+    "jest": "21.2.1",
+    "react-test-renderer": "16.0.0-beta.5"
+  },
+
+  "jest": {
+    "preset": "react-native"
+  }
+}
