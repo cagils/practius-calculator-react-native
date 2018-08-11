@@ -1,6 +1,7 @@
-import React, {Component} from 'react'
+import React, { Component } from 'react'
 
 import CalculatorContainer from 'components/Calculator/CalculatorContainer'
 
-export default App = () => <CalculatorContainer/>
+const App = () => <CalculatorContainer />
 
+export default App

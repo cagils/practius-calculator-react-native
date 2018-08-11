@@ -1,36 +1,30 @@
-import React, {Component} from 'react'
+import React, { Component } from 'react'
 import PropTypes from 'prop-types'
 import {
-    StyleSheet,
-    Text,
-    View,
-    TouchableHighlight,
-    TouchableOpacity,
-    Clipboard,
-    Platform
+  StyleSheet,
+  Text,
+  View,
+  TouchableHighlight,
+  TouchableOpacity,
+  Clipboard,
+  Platform,
 } from 'react-native'
 
 import styles from 'app/styles'
 
-const DisplayButton = (props) => (
-    <TouchableHighlight
-        style={styles.displayButtons}
-        underlayColor='cyan'
-        onPress={props.onPressButton}
-    >
-        <View>
-            {props.children}
-        </View>
-    </TouchableHighlight>
+const DisplayButton = ({ onPressButton, children }) => (
+  <TouchableHighlight style={styles.displayButtons} underlayColor="cyan" onPress={onPressButton}>
+    <View>{children}</View>
+  </TouchableHighlight>
 )
 
 DisplayButton.propTypes = {
-    onPressButton: PropTypes.func.isRequired,
-    style: Text.propTypes.style,
+  children: PropTypes.node,
+  onPressButton: PropTypes.func.isRequired,
 }
 
 DisplayButton.defaultProps = {
-    style: {},
+  children: null,
 }
 
 export default DisplayButton
