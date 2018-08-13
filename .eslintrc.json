@@ -50,7 +50,7 @@
     "linebreak-style": [
       "error",
       "unix"
-    ],
+    ]
   },
   "env": {
     "jest": true

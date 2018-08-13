@@ -8,7 +8,7 @@ const isNumericCustom = n => !Number.isNaN(parseFloat(n)) && Number.isFinite(n)
 
 //  const calculateWithEval = evalString => eval(evalString).toString()
 
-const calculateWithMathjs = evalString => math.eval(evalString).toString()
+const calculateWithMathjs = evalString => Number(math.eval(evalString)).toString()
 
 const calculate = evalString => (evalString ? calculateWithMathjs(evalString) : '')
 

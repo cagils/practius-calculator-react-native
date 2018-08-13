@@ -1,5 +1,6 @@
 import { StyleSheet } from 'react-native'
 
+const ss = StyleSheet.create({})
 const styles = StyleSheet.create({
   container: {
     flex: 1,
@@ -8,7 +9,7 @@ const styles = StyleSheet.create({
     padding: 0,
   },
   appBarContainer: {
-    // borderWidth: StyleSheet.hairlineWidth,
+    // borderWidth: ss.hairlineWidth,
     // borderColor: 'white',
     padding: 0,
     margin: 0,
@@ -18,7 +19,7 @@ const styles = StyleSheet.create({
     flex: 1,
     // backgroundColor: 'darkblue',
     borderColor: 'gray',
-    borderWidth: StyleSheet.hairlineWidth,
+    borderWidth: ss.hairlineWidth,
     padding: 4,
     margin: 2,
     justifyContent: 'center',
@@ -27,7 +28,7 @@ const styles = StyleSheet.create({
     flex: 0.4,
     justifyContent: 'flex-start',
     // backgroundColor: 'red',
-    // borderWidth: StyleSheet.hairlineWidth,
+    // borderWidth: ss.hairlineWidth,
     // borderColor: 'yellow',
     padding: 0,
     margin: 0,
@@ -39,7 +40,7 @@ const styles = StyleSheet.create({
     // backgroundColor: 'orange',
     padding: 0,
     margin: 0,
-    // borderWidth: StyleSheet.hairlineWidth,
+    // borderWidth: ss.hairlineWidth,
     // borderColor: 'lightblue',
   },
   resultArea: {
@@ -49,7 +50,7 @@ const styles = StyleSheet.create({
     flexWrap: 'nowrap',
     padding: 2,
     margin: 2,
-    borderWidth: StyleSheet.hairlineWidth,
+    borderWidth: ss.hairlineWidth,
     borderColor: 'lightblue',
     justifyContent: 'flex-end',
     alignItems: 'flex-end',
@@ -62,7 +63,7 @@ const styles = StyleSheet.create({
     // backgroundColor: 'black',
     padding: 2,
     margin: 2,
-    borderWidth: StyleSheet.hairlineWidth,
+    borderWidth: ss.hairlineWidth,
     borderColor: 'lightgreen',
     justifyContent: 'flex-end',
     alignItems: 'center',
@@ -75,7 +76,7 @@ const styles = StyleSheet.create({
     flexDirection: 'row',
     justifyContent: 'flex-end',
     alignItems: 'center',
-    // borderWidth: StyleSheet.hairlineWidth,
+    // borderWidth: ss.hairlineWidth,
     // borderColor: 'green',
   },
   displayOps: {
@@ -86,13 +87,13 @@ const styles = StyleSheet.create({
     flexDirection: 'column',
     justifyContent: 'space-around',
     alignItems: 'center',
-    // borderWidth: StyleSheet.hairlineWidth,
+    // borderWidth: ss.hairlineWidth,
     // borderColor: 'green',
   },
   displayErase: {
     margin: 2,
     padding: 2,
-    // borderWidth: StyleSheet.hairlineWidth,
+    // borderWidth: ss.hairlineWidth,
     // borderColor: 'gray',
   },
   displayEraseTouchable: {
@@ -112,7 +113,7 @@ const styles = StyleSheet.create({
     flexDirection: 'row',
     justifyContent: 'flex-end',
     alignItems: 'center',
-    // borderWidth: StyleSheet.hairlineWidth,
+    // borderWidth: ss.hairlineWidth,
     // borderColor: 'green',
   },
   displayButtons: {
@@ -121,7 +122,7 @@ const styles = StyleSheet.create({
     width: 40,
     height: 40,
     justifyContent: 'center',
-    borderWidth: StyleSheet.hairlineWidth,
+    borderWidth: ss.hairlineWidth,
     borderColor: 'teal',
     borderRadius: 20,
     // backgroundColor: 'teal'
@@ -131,12 +132,12 @@ const styles = StyleSheet.create({
     // backgroundColor: '#4756ff',
     padding: 2,
     margin: 2,
-    borderWidth: StyleSheet.hairlineWidth,
+    borderWidth: ss.hairlineWidth,
     borderColor: 'cyan',
   },
   opsArea: {
     flex: 0.25,
-    borderWidth: StyleSheet.hairlineWidth,
+    borderWidth: ss.hairlineWidth,
     borderColor: 'magenta',
     // backgroundColor: 'magenta',
     padding: 2,
@@ -145,8 +146,8 @@ const styles = StyleSheet.create({
   gridContainer: {
     flex: 1,
     borderColor: '#555555',
-    borderRightWidth: StyleSheet.hairlineWidth,
-    borderBottomWidth: StyleSheet.hairlineWidth,
+    borderRightWidth: ss.hairlineWidth,
+    borderBottomWidth: ss.hairlineWidth,
   },
   buttonContainer: {
     // width: "auto",
@@ -156,8 +157,8 @@ const styles = StyleSheet.create({
     borderWidth: 0,
     borderColor: '#555555',
     backgroundColor: '#00111188',
-    borderTopWidth: StyleSheet.hairlineWidth,
-    borderLeftWidth: StyleSheet.hairlineWidth,
+    borderTopWidth: ss.hairlineWidth,
+    borderLeftWidth: ss.hairlineWidth,
     padding: 0,
     justifyContent: 'center',
     alignItems: 'stretch',
