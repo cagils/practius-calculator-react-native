@@ -55,6 +55,7 @@ Buttons.propTypes = {
   onPressButton: PropTypes.func.isRequired,
   parenCount: PropTypes.number,
 }
+
 Buttons.defaultProps = {
   parenCount: 0,
 }

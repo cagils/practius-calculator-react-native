@@ -8,6 +8,7 @@ import {
   TouchableOpacity,
   Clipboard,
   Platform,
+  StatusBar,
 } from 'react-native'
 
 import styles from 'app/styles'
@@ -30,6 +31,10 @@ const Calculator = ({
   onPressButton,
 }) => (
   <View style={styles.container}>
+    <StatusBar translucent animated networkActivityIndicatorVisible barStyle="light-content" />
+    {Platform.OS === 'android' && Platform.Version >= 20 ? (
+      <View style={styles.statusBarFiller} />
+    ) : null}
     <AppBar />
     <Display
       input={format(input, buttons)}
