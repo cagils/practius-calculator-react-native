@@ -1,6 +1,6 @@
 import { StyleSheet } from 'react-native'
 
-const borderWidth = 1 // StyleSheet.hairlineWidth
+const $borderWidth = 1 // StyleSheet.hairlineWidth
 
 const styles = StyleSheet.create({
   statusBarFiller: {
@@ -21,7 +21,7 @@ const styles = StyleSheet.create({
   appBar: {
     flex: 1,
     borderColor: 'gray',
-    borderWidth: borderWidth,
+    borderWidth: $borderWidth,
     padding: 4,
     margin: 2,
     justifyContent: 'center',
@@ -45,7 +45,7 @@ const styles = StyleSheet.create({
     flexWrap: 'nowrap',
     padding: 2,
     margin: 2,
-    borderWidth: borderWidth,
+    borderWidth: $borderWidth,
     borderColor: 'lightblue',
     justifyContent: 'flex-end',
     alignItems: 'flex-end',
@@ -57,7 +57,7 @@ const styles = StyleSheet.create({
     flexWrap: 'nowrap',
     padding: 2,
     margin: 2,
-    borderWidth: borderWidth,
+    borderWidth: $borderWidth,
     borderColor: 'lightgreen',
     justifyContent: 'flex-end',
     alignItems: 'center',
@@ -115,12 +115,12 @@ const styles = StyleSheet.create({
     flex: 0.75,
     padding: 2,
     margin: 2,
-    borderWidth: borderWidth,
+    borderWidth: $borderWidth,
     borderColor: 'cyan',
   },
   opsArea: {
     flex: 0.25,
-    borderWidth: borderWidth,
+    borderWidth: $borderWidth,
     borderColor: 'magenta',
     padding: 2,
     margin: 2,
@@ -128,16 +128,16 @@ const styles = StyleSheet.create({
   gridContainer: {
     flex: 1,
     borderColor: '#555555',
-    borderRightWidth: borderWidth,
-    borderBottomWidth: borderWidth,
+    borderRightWidth: $borderWidth,
+    borderBottomWidth: $borderWidth,
   },
   buttonContainer: {
     flex: 1,
     borderWidth: 0,
     borderColor: '#555555',
     backgroundColor: '#00111188',
-    borderTopWidth: borderWidth,
-    borderLeftWidth: borderWidth,
+    borderTopWidth: $borderWidth,
+    borderLeftWidth: $borderWidth,
     padding: 0,
     justifyContent: 'center',
     alignItems: 'stretch',
