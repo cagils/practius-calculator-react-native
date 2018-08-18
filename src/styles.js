@@ -246,6 +246,7 @@ const styles = StyleSheet.create({
     textAlign: 'right',
   },
   textPasteError: {
+    flex: 1,
     fontFamily: 'sans-serif-light',
     color: '#cccccc',
     fontSize: 14,

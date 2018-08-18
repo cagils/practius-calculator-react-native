@@ -1,15 +1,6 @@
-import React, { Component } from 'react'
+import React from 'react'
 import PropTypes from 'prop-types'
-import {
-  StyleSheet,
-  Text,
-  View,
-  TouchableHighlight,
-  TouchableOpacity,
-  Clipboard,
-  Platform,
-  ScrollView,
-} from 'react-native'
+import { Text, View, TouchableOpacity, ScrollView } from 'react-native'
 
 import styles from 'app/styles'
 
@@ -25,6 +16,7 @@ const Display = ({
   error,
   pasteError,
 }) => {
+  let scrollViewRef = null
   let resultFontSize = 120
   let resultNumLines = 1
   const len = result.length
@@ -94,16 +86,18 @@ const Display = ({
         <View style={styles.inputAreaScrollWrapper}>
           <ScrollView
             contentContainerStyle={{}}
-            horizontal={true}
-            ref={ref => (this.scrollView = ref)}
-            onContentSizeChange={({}) => {
-              this.scrollView.scrollToEnd({ animated: true })
+            horizontal
+            ref={ref => {
+              scrollViewRef = ref
+            }}
+            onContentSizeChange={() => {
+              scrollViewRef.scrollToEnd({ animated: true })
             }}>
             <View style={styles.displayLine}>
               <Text style={styles.textDisplayLine}>{input}</Text>
               {pasteError && (
                 <View style={styles.pasteError}>
-                  <Text style={{ flex: 1 }} numberOflines={1} style={styles.textPasteError}>
+                  <Text numberOflines={1} style={styles.textPasteError}>
                     {pasteError}
                   </Text>
                 </View>

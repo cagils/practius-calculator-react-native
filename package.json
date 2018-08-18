@@ -10,12 +10,13 @@
     "lint-fix": "eslint src --fix",
     "pretty": "prettier --write \"src/**/*.js\"",
     "precommit": "lint-staged",
+    "postcommit": "git update-index -g",
     "flow": "flow",
     "flow-stop": "flow stop"
   },
   "lint-staged": {
-    "*.js": [
-      "npm run pretty",
+    "*.{js,jsx,json}": [
+      "prettier --write",
       "git add"
     ]
   },
