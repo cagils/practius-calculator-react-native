@@ -8,6 +8,7 @@ import {
   TouchableOpacity,
   Clipboard,
   Platform,
+  ScrollView,
 } from 'react-native'
 
 import styles from 'app/styles'
@@ -90,15 +91,25 @@ const Display = ({
         </View>
       </View>
       <View style={styles.inputArea}>
-        <View style={styles.displayLine}>
-          <Text style={styles.textDisplayLine}>{input}</Text>
-          {pasteError && (
-            <View style={styles.pasteError}>
-              <Text numberOflines={1} style={styles.textPasteError}>
-                {pasteError}
-              </Text>
+        <View style={styles.inputAreaScrollWrapper}>
+          <ScrollView
+            contentContainerStyle={{}}
+            horizontal={true}
+            ref={ref => (this.scrollView = ref)}
+            onContentSizeChange={({}) => {
+              this.scrollView.scrollToEnd({ animated: true })
+            }}>
+            <View style={styles.displayLine}>
+              <Text style={styles.textDisplayLine}>{input}</Text>
+              {pasteError && (
+                <View style={styles.pasteError}>
+                  <Text style={{ flex: 1 }} numberOflines={1} style={styles.textPasteError}>
+                    {pasteError}
+                  </Text>
+                </View>
+              )}
             </View>
-          )}
+          </ScrollView>
         </View>
         <View style={styles.displayErase}>
           <TouchableOpacity
