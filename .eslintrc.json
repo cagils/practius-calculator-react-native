@@ -5,7 +5,11 @@
   "parser": "babel-eslint",
 
   "parserOptions": {
-    "ecmaVersion": 2017
+    "ecmaVersion": 2017,
+    "sourceType": "modules",
+    "ecmaFeatures": {
+      "jsx": true
+    }
   },
 
   "extends": [
@@ -22,6 +26,7 @@
     "jsx-a11y",
     "import"
   ],
+
   "rules": {
     "react/jsx-filename-extension": [
       1, { "extensions": [".js", ".jsx"] }
@@ -41,6 +46,7 @@
         "peerDependencies": false
       }
     ],
+
     "semi": ["error", "never"],
     "no-useless-escape": "off",
     "import/no-unresolved": "off",
