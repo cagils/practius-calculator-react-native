@@ -9,7 +9,7 @@
     "lint": "eslint src",
     "lint-fix": "eslint src --fix",
     "pretty": "prettier --write \"src/**/*.js\"",
-    "precommit": "lint-staged && npm run test",
+    "precommit": "lint-staged",
     "flow": "flow",
     "flow-stop": "flow stop"
   },
